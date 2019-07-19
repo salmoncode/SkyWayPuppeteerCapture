@@ -4,7 +4,8 @@ const puppeteer = require('puppeteer')
 const { App : Bot} = require('@slack/bolt')
 
 const bot = new Bot({
-
+    token: "xoxb-2445147639-692060544545-Q43pkRjfJNSOmwIUuh8ivuU2",
+    signingSecret: "04139e53e5816c7ceecd0e8a834c90a1"
 })
 
 bot.message(/^capture get (.*)/, async ({ message, say, context }) => {
